@@ -1,3 +1,10 @@
+:root {
+    --fuente-elegante: 'Tangerine', cursive;
+    --fuente-secundaria: 'Antic Didone', serif;
+    --color-azul-claro: #7B9CBB;
+    --background-color-button: linear-gradient(to right, #3d85cd, #1c4a77);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +12,8 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-elegante);
+    font-size: 50px;
     background: linear-gradient(135deg, #0a1128, #1c2541);
     color: #fff;
     line-height: 1.6;
@@ -67,63 +75,36 @@ header {
 .header-content {
     position: relative;
     z-index: 1;
-    background: rgba(13, 27, 55, 0.6);
     padding: 30px 40px;
     border-radius: 10px 0 0 10px;
     max-width: 400px;
     margin-right: 0;
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
     text-align: right;
 }
 
 .header-content h1 {
-    font-family: 'Aridec Slab', 'Playfair Display', serif;
+    font-family: var(--fuente-secundaria);
+    font-weight: 50;
     font-size: 4rem;
-    color: #f8bbd0;
+    color: var(--color-azul-claro);
     margin-bottom: 5px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .header-content h2 {
-    font-family: 'Amoresa Aged', 'Playfair Display', serif;
+    font-family: var(--fuente-elegante);
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    text-align: center;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .decorative-line {
     height: 2px;
     width: 150px;
-    background: linear-gradient(to left, transparent, #daa520, transparent);
-    margin: 15px 0 15px auto;
-}
-
-/* Welcome Section */
-.welcome-section {
-    text-align: center;
-    padding: 50px 30px;
-    background: rgba(13, 27, 55, 0.6);
-}
-
-.welcome-content h2 {
-    font-family: 'Amoresa Aged', 'Playfair Display', serif;
-    font-size: 2.2rem;
-    color: #f8bbd0;
-    margin-bottom: 20px;
-}
-
-.welcome-message {
-    max-width: 600px;
-    margin: 0 auto 30px;
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.decorative-element {
-    font-size: 2rem;
-    color: #daa520;
-    margin: 20px 0;
+    background: linear-gradient(to left, transparent, #ffffff, transparent);
+    margin: 10px auto;
 }
 
 /* Details Section */
@@ -149,20 +130,16 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.detail-icon {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
 .detail-item h3 {
-    font-family: 'Amoresa Aged', 'Playfair Display', serif;
-    color: #f8bbd0;
+    font-family: var(--fuente-secundaria);
+    color: var(--color-azul-claro);
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
 .detail-item p {
     margin-bottom: 5px;
+    font-size: smaller;
 }
 
 /* Location Styles */
@@ -206,8 +183,8 @@ header {
 }
 
 .dress-code-text {
-    font-family: 'Amoresa Aged', 'Playfair Display', serif;
-    font-size: 1.3rem;
+    font-family: var(--fuente-elegante);
+    font-size: 3rem;
     color: #fff;
     margin-top: 10px;
 }
@@ -220,9 +197,9 @@ header {
 }
   
 .gallery-section h2 {
-    font-family: 'Amoresa Aged', 'Playfair Display', serif;
+    font-family: var(--fuente-secundaria);
     font-size: 2.2rem;
-    color: #f8bbd0;
+    color: var(--color-azul-claro);
     margin-bottom: 30px;
 }
 
@@ -314,7 +291,7 @@ header {
 }
 
 .dot.active {
-    background: #f8bbd0;
+    background: var(--color-azul-claro);
 }
 
 /* Countdown Section */
@@ -325,9 +302,9 @@ header {
 }
 
 .countdown-section h2 {
-    font-family: 'Amoresa Aged', 'Playfair Display', serif;
+    font-family: var(--fuente-secundaria);
     font-size: 2rem;
-    color: #f8bbd0;
+    color: var(--color-azul-claro);
     margin-bottom: 30px;
 }
 
@@ -348,7 +325,7 @@ header {
 .countdown-item span:first-child {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #daa520;
+    color: var(--color-azul-claro);
     background: rgba(13, 27, 55, 0.6);
     border-radius: 8px;
     width: 80px;
@@ -360,8 +337,9 @@ header {
 }
 
 .countdown-label {
+    font-family: var(--fuente-secundaria);
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -374,107 +352,17 @@ header {
 }
 
 .rsvp-button {
-    background: linear-gradient(to right, #f8bbd0, #ec407a);
+    background: var(--background-color-button);
     color: white;
     border: none;
     padding: 15px 40px;
     font-size: 1.1rem;
-    border-radius: 30px;
+    border-radius: 8px;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-secundaria);
     font-weight: 500;
     letter-spacing: 1px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.rsvp-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.rsvp-form {
-    max-width: 500px;
-    margin: 40px auto 0;
-    background: rgba(13, 27, 55, 0.8);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: left;
-}
-
-.rsvp-form h2 {
-    font-family: 'Amoresa Aged', 'Playfair Display', serif;
-    color: #f8bbd0;
-    margin-bottom: 25px;
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
-.form-group input[type="text"] {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-}
-
-.radio-group {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.radio-label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.radio-label input {
-    margin-right: 10px;
-}
-
-.submit-button {
-    background: #daa520;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    width: 100%;
-    margin-top: 10px;
-    transition: all 0.3s ease;
-}
-
-.submit-button:hover {
-    background: #c69500;
-}
-
-.form-success {
-    text-align: center;
-    padding: 20px;
-}
-
-.form-success p {
-    font-size: 1.2rem;
-    color: #4caf50;
 }
 
 /* Footer */
@@ -494,13 +382,7 @@ footer p {
 .date-time-item {
     flex: 1;
     min-width: 250px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: linear-gradient(to bottom, #2c3e50, #4a6491);
-}
-  
-.date-time-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
   
 .calendar-link {
@@ -519,18 +401,16 @@ footer p {
 }
   
 .add-calendar {
+    background: var(--background-color-button);
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5rem;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(218, 165, 32, 0.2);
     padding: 10px 15px;
     border-radius: 8px;
-    transition: background 0.3s ease;
-}
-  
-.date-time-item:hover .add-calendar {
-    background: rgba(218, 165, 32, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
   
 .calendar-icon {
@@ -604,8 +484,9 @@ footer p {
         padding: 0;
         max-width: 100%;
         width: 100%;
-        border-radius: 10px 10px 0 0;
+        border-radius: 0;
         text-align: center;
+        background: linear-gradient(rgba(10, 28, 63, 0), #2432587b, #19233F);
     }
     
     .decorative-line {
