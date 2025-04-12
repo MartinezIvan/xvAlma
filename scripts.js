@@ -38,7 +38,7 @@ const attendanceForm = document.getElementById('attendance-form');
 const formSuccess = document.getElementById('form-success');
 
 rsvpButton.addEventListener('click', function() {
-    window.location.href = 'https://wa.me/542216767232?text=Hola!%20quiero%20confirmar%20mi%20asistencia%20al%20Xv.%20Gracias!';
+    window.location.href = 'https://wa.me/542214083196?text=Hola!%20quiero%20confirmar%20mi%20asistencia%20al%20Xv.%20Gracias!';
 });
 
 // Carousel Functionality
